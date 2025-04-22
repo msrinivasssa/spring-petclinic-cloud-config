@@ -11,6 +11,10 @@ spring:
     services:
       registrationMethod: direct
 
+logging:
+  level:
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: DEBUG
+
 management:
   metrics:
     export:
