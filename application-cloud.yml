@@ -16,6 +16,13 @@ management:
     export:
       wavefront:
         enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    env:
+      enabled: true        
 #wavefront:
 #  application:
 #    name: spring-petclinic
