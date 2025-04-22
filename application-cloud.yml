@@ -11,13 +11,11 @@ spring:
     services:
       registrationMethod: direct
 
-#management:
-#  metrics:
-#    export:
-#      wavefront:
-#        uri: ${vcap.services.wavefront.credentials.uri}
-#        api-token: ${vcap.services.wavefront.credentials.api-token}
-
+management:
+  metrics:
+    export:
+      wavefront:
+        enabled: false
 #wavefront:
 #  application:
 #    name: spring-petclinic
