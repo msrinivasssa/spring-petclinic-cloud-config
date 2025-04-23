@@ -1,5 +1,7 @@
 spring:
   cloud:
+    activate:
+      on-profile: cloud
     loadbalancer:
       ribbon:
         enabled: false
