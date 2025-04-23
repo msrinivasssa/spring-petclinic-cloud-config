@@ -40,9 +40,6 @@ spring:
           filters:
             - AddRequestHeader=X-Request-Red, Blue-{segment}
             - StripPrefix=2
-
-
-
 server:
   port: 8080
   compression:
@@ -60,7 +57,9 @@ management:
         include: '*'
 ---
 spring:
-  profiles: docker
+  config:
+    activate:
+      on-profile: docker
   zipkin:
     baseUrl: http://tracing-server:9411
 eureka:
