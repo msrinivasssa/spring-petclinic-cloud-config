@@ -10,24 +10,3 @@ spring:
   cloud:
     services:
       registrationMethod: direct
-
-logging:
-  level:
-    org.springframework.cloud.gateway.route.RouteDefinitionLocator: DEBUG
-
-management:
-  metrics:
-    export:
-      wavefront:
-        enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    env:
-      enabled: true        
-#wavefront:
-#  application:
-#    name: spring-petclinic
-#  freemium-account: ${vcap.services.wavefront.credentials.fremium}

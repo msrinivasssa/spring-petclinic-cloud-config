@@ -50,11 +50,6 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 ---
 spring:
   config:
